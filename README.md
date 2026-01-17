@@ -33,7 +33,7 @@ The project focuses on layout structure, responsiveness, hover effects, and clea
 - Footer
 
 ## 🚀 Live Demo
-🔗 [View Live](PUT_YOUR_LIVE_LINK_HERE)
+🔗 [View Live](https://mennaomar777.github.io/fokir-landing-page/)
 
 ## 🧠 What I Practiced
 - Building complex layouts using Flexbox & Grid
