@@ -1,0 +1,300 @@
+@media (max-width: 1024px) {
+  /* About Section */
+  section.about-sec {
+    .about-part {
+      display: grid;
+      grid-template-columns: 50% 50%;
+      gap: 1rem;
+      .photo-part {
+        position: relative;
+        display: flex;
+        justify-content: center;
+
+        .border-div {
+          border: none;
+          overflow: hidden;
+          width: 100%;
+
+          .image-div {
+            width: 90%;
+            position: relative;
+            overflow: hidden;
+            img {
+              width: 100%;
+            }
+            .layer {
+              background-color: rgba(0, 0, 0, 0.5);
+              position: absolute;
+              inset: 0;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              border-radius: 0.625rem;
+              transform: translateY(100%);
+              transition: all 0.3s linear;
+              div.about-icons {
+                color: white;
+                display: flex;
+                gap: 1.25rem;
+                align-items: center;
+                justify-content: center;
+
+                a {
+                  transition: all 0.2s linear;
+                  &:hover {
+                    color: var(--main-color);
+                  }
+                }
+              }
+            }
+            &:hover .layer {
+              transform: translateY(0%);
+            }
+          }
+        }
+      }
+
+      .content-part {
+        div.hello p {
+          padding-bottom: 1rem;
+        }
+        div.about-details .details {
+          grid-template-columns: 38% 62%;
+          gap: 1rem;
+          margin-bottom: 1rem;
+
+          p {
+            margin-block: 0rem;
+            font-size: 0.875rem;
+          }
+          span {
+            font-size: 0.875rem;
+          }
+        }
+        .details-btns button {
+          background-color: var(--main-color);
+          border: none;
+          border-radius: 0.3125rem;
+          padding-inline: 1.5625rem;
+          padding-block: 0.8125rem;
+          color: white;
+          font-size: 1.0313rem;
+          text-transform: capitalize;
+          margin-right: 0.625rem;
+          cursor: pointer;
+          transition: all 0.2s linear;
+
+          &:hover {
+            background-color: #ec2403;
+          }
+        }
+      }
+    }
+  }
+  /* Services Section */
+  section.services-sec {
+    div.parts {
+      flex-wrap: wrap;
+      .part {
+        width: 49%;
+      }
+    }
+  }
+  /* Portfolio Section */
+  section.portfolio-sec {
+    .portfolio-imgs {
+      display: grid;
+      grid-template-columns: 50% 50%;
+      picture {
+        width: 100%;
+      }
+    }
+  }
+  /* Testimonial Section */
+  section.testimonial-sec {
+    padding-block: var(--main-padding);
+    font-family: var(--main-font);
+
+    div.testimonial-container {
+      max-width: 65%;
+      margin-inline: auto;
+      background-color: rgba(232, 231, 231, 0.637);
+      border-radius: 0.4rem;
+      margin-top: 3rem;
+      padding: 2rem;
+      display: flex;
+      gap: 2rem;
+      position: relative;
+      border-radius: 0.5rem;
+
+      &::before {
+        border-top: 9rem solid var(--main-color);
+        border-right: 9rem solid transparent;
+      }
+
+      .person {
+        width: 65%;
+        padding-top: 0.4rem;
+        img {
+          width: 100%;
+          border-radius: 100%;
+          position: relative;
+          z-index: 10;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  /* Navbar */
+
+  nav {
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+      .nav-links {
+        width: 100%;
+        padding-bottom: 1.5rem;
+      }
+      .nav-links ul {
+        flex-direction: column;
+        gap: 1.5rem;
+      }
+    }
+  }
+  /* Home section */
+  header {
+    div.header-content {
+      width: 25rem;
+      p.hello {
+        font-size: 1.375rem;
+      }
+      p.title {
+        font-size: 1.125rem;
+      }
+      h2 {
+        font-size: 2.375rem;
+      }
+    }
+  }
+  /* About Section */
+  section.about-sec {
+    .about-part {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+
+      .photo-part {
+        position: relative;
+        display: flex;
+        justify-content: center;
+
+        .border-div {
+          border: none;
+          overflow: hidden;
+          width: 25rem;
+
+          .image-div {
+            width: 100%;
+            position: static;
+            overflow: hidden;
+            background-color: red;
+            img {
+              width: 100%;
+            }
+          }
+        }
+      }
+
+      .content-part {
+        width: 76%;
+        margin-inline: auto;
+        padding-left: 1rem;
+
+        div.about-details .details {
+          display: flex;
+          flex-direction: column;
+        }
+        .details-btns button {
+          padding-inline: 0.6rem;
+          padding-block: 0.7rem;
+        }
+      }
+    }
+  }
+  /* Services Section */
+  section.services-sec {
+    div.parts {
+      margin-inline: auto;
+      flex-direction: column;
+      .part {
+        width: 100%;
+        padding: 1rem;
+      }
+    }
+  }
+  /* Portfolio Section */
+  section.portfolio-sec {
+    .portfolio-imgs {
+      display: grid;
+      grid-template-columns: 100%;
+      picture {
+        width: 100%;
+      }
+    }
+    .numbers {
+      flex-direction: column;
+      gap: 1.4rem;
+
+      div {
+        width: 100%;
+        flex-direction: column;
+      }
+    }
+  }
+  /* Testimonial Section */
+  section.testimonial-sec {
+    div.testimonial-container {
+      max-width: 80%;
+      flex-direction: column;
+      align-items: center;
+      .person {
+        width: 35%;
+        img {
+          width: 100%;
+        }
+      }
+      .feedback {
+        h3 {
+          margin-top: 0;
+        }
+      }
+    }
+  }
+  /* Blog Section */
+  section.blog-sec {
+    padding-inline: 3.8rem;
+    .blogs {
+      flex-direction: column;
+    }
+  }
+  /* Contact Section */
+  section.contact-sec {
+    .form-container {
+      max-width: 80%;
+      form {
+        display: grid;
+        grid-template-areas:
+          "name name name name"
+          "email email email email"
+          "subject subject subject subject"
+          "message message message message";
+      }
+    }
+  }
+  /* Footer */
+  footer {
+    padding-block: 2.5rem;
+  }
+}
