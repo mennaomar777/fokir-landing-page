@@ -71,12 +71,24 @@ nav {
     }
   }
 }
+/* target */
+body:has(#home:target) nav a[href="#home"],
+body:has(#about:target) nav a[href="#about"],
+body:has(#services:target) nav a[href="#services"],
+body:has(#portfolio:target) nav a[href="#portfolio"],
+body:has(#testimonial:target) nav a[href="#testimonial"],
+body:has(#blog:target) nav a[href="#blog"],
+body:has(#contact:target) nav a[href="#contact"],
+body:not(:has(:target)) nav a[href="#home"] {
+  color: var(--main-color);
+}
 
 /* Home section */
 
 header {
   height: 100vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url(../images/hero\ img.jpg);
   background-repeat: no-repeat;
   background-position: center;

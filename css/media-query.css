@@ -219,6 +219,7 @@
         .details-btns button {
           padding-inline: 0.6rem;
           padding-block: 0.7rem;
+          margin-top: 0.5rem;
         }
       }
     }
@@ -236,6 +237,9 @@
   }
   /* Portfolio Section */
   section.portfolio-sec {
+    div.portfolio-links ul {
+      gap: 1rem;
+    }
     .portfolio-imgs {
       display: grid;
       grid-template-columns: 100%;
